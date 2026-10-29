@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joshua Adigizi Philip - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Joshua Adigizi Philip
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          biggiesmason@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +2349030222585
+
+        </div>
+        </div>
+        <div class="topdiv">
+         <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://img.magnific.com/premium-vector/male-businessman-is-sitting-while-working-front-computer-focus-working-with-computers_923732-3339.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+           Hi, I'm Joshua Adigizi Philip! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a versatile entrepreneur and developer with expertise in web development, architectural design coordination, and direct-response copywriting. I build robust applications and digital solutions, blending technical precision with modern design standards.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+ <div class="all_skills">
+        <div class="skill">
+          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5"/>
+          <h6>HTML5</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js"/>
+          <h6>Node.js</h6>
+          <p>2 years experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React"/>
+          <h6>React</h6>
+          <p>2 years experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3"/>
+          <h6>CSS3</h6>
+          <p>4 years experience</p>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Agri-Tech Farm Management System</h3>
+            <ul>
+              <li>Developed an automated crop cultivation tracking and resource management platform integrating drip irrigation schedules and yield forecasting.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Architectural Spatial Matrix Visualizer</h3>
+            <ul>
+              <li>Created a python and web-based utility for rendering 3D architectural floor plans and optimizing spatial layout distributions for luxury real estate projects.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Quantitative Sports Analytics Dashboard</h3>
+            <ul>
+              <li>Built a statistical match fixture evaluation tool for analyzing Premier League and European football data to generate predictive performance metrics.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Joshua is a dedicated professional with an exceptional eye for detail. His ability to blend technical architecture with practical execution is remarkable.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Joshua on our real estate development planning was seamless. He brings sharp analytical skills and unwavering commitment to every project.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Joshua's first-principles approach and quantitative rigor make him a stellar asset. He takes initiative and consistently delivers outstanding results.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+         <img src="https://img.icons8.com/ios-filled/50/ffffff/home.png" width="40px" alt="Home"/>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <!-- Add appropriate text here-->
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
